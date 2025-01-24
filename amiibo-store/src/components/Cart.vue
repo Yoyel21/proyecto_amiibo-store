@@ -1,9 +1,13 @@
 <template>
-    <div class="cart">
-        <h2>Carrito</h2>
+    <div class="bg-orange-50">
+        <h1 class="text-3xl">Cart</h1>
         <ul>
             <li v-for="item in cartItems" :key="item.tail">
                 {{ item.name }}
+                <ul>
+                    <li>{{ item.amiiboSeries }}</li>
+                    <li>{{ item.gameSeries }}</li>
+                </ul>
             </li>
         </ul>
     </div>

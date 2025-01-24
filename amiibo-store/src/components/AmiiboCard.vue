@@ -19,7 +19,6 @@
                 <span>{{ amiibo.type }}</span>
             </div>
         </div>
-
         <button @click="$emit('addToCart', amiibo)"
             class="mt-4 w-full py-2 px-4 text-white rounded-lg hover:bg-indigo-600 transition-colors duration-300 bg-indigo-500">
             Añadir al Carrito
